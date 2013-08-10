@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/**
+ * [unit] ユニット
+ * モジュールの単位となる。前後にデフォルトマージン付加
+ */
+div.unit{
+	margin-top:1em;
+	margin-bottom:1.5em;
+	clear:both;
+}
+
+/**
+ * [static] .clearfix (and [unit] unit)
+ */
+.unit,
+.clearfix{
+	display:block;
+	float:none;
+	clear:both;
+}
+.unit:after,
+.clearfix:after{
+	content: " ";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear:both;
+}
+.unit,
+.clearfix{
+	/* clearfix(for IE6,7) (IE8以降不要) */
+	zoom:1;
+}
+
+
+/**
+ * [unit] 回り込み画像
+ */
+.float_media{
+}
+.float_media .float_media-r1of3{
+	float:right;
+	width:33%;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+.float_media .float_media-r1of3 img{
+	width:100%;
+	height:auto;
+}
+
+.float_media .float_media-image{
+	margin-top:0;
+}
+.float_media .float_media-caption{
+	font-size:86%;
+}
+.float_media .float_media-body{
+}
+.float_media .float_media-body_rect{
+	overflow:hidden;
+}
+.float_media .float_media-body_rect *:first-child{
+	margin-top:0;
+}
+
