@@ -5,55 +5,75 @@ body{
 	padding:0px 0px 0px 0px;
 	margin:0px 0px 0px 0px;
 }
-body .outline{
+.outline{
 	text-align:left;
 	width:auto;
 	max-width:980px;
 	margin:0px auto;
 	background-color:#dddddd;
 }
-body .outline .header{
+.header{
 	text-align:center;
 	background-color:#ff0099;
 }
-body .outline .header .logo{
+.header .logo{
 }
-body .outline .header .logo a{
+.header .logo a{
 	font-size:150%;
 	font-weight:bold;
 }
 
-body .outline .middle{
+.middle{
 	clear:both;
 }
-body .outline .middle .column1{
+.column1{
 	width:68%;
 	float:left;
 	padding:2%;
 	background-color:#dddd88;
 }
-
-body .outline .middle .column2{
+.column2{
 	width:20%;
 	float:right;
 	padding:2%;
 	background-color:#009999;
 }
 
-@media all and (max-width:530px){
-	body .outline .middle .column1{
-		width:auto;
-		float:none;
-	}
-	body .outline .middle .column2{
-		width:auto;
-		float:none;
-	}
-}
-
-body .outline .footer{
+.footer{
 	clear:both;
 	text-align:center;
 	background-color:#008833;
+}
+
+/**
+ * 回り込み画像
+ */
+.float_img{
+	display:block;
+	float:none;
+	clear:both;
+	margin-top:1em;
+	margin-bottom:1.5em;
+	clear:both;
+	zoom:1;
+}
+.float_img:after{
+	content: " ";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear:both;
+}
+.nyanko{
+	float:right;
+	width:33%;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+.nyanko img{
+	width:100%;
+	height:auto;
 }
 
